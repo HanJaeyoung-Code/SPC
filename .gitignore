@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+
+# Data-loader cache (regenerated on first run)
+.v3_subset.parquet
+
+# Large raw dataset — do NOT commit (2.5 GB). Download IndPenSim V3 separately.
+100_Batches_IndPenSim_V3.csv
+
+# OS cruft
+.DS_Store
