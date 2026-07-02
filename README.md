@@ -143,7 +143,7 @@ python step4_trajectory.py         # (optional) accumulation curves
 Each script is self-contained and imports `step0_data_loader` automatically. Place
 `100_Batches_IndPenSim_V3.csv` and `100_Batches_IndPenSim_Statistics.csv` in the repo root.
 
-## Operating recommendation (the engineering takeaway)
+## Operating recommendation 
 
 1. **Feed to demand** — match sugar feed to consumption so residual glucose stays near
    zero (a glucose-limited culture is the penicillin-producing state).
