@@ -15,7 +15,7 @@ APPROACH
 
 KEY DECISIONS
     - Batches are flagged on TRUE harvested yield (yield_kg, mass),
-      consistent with Root_Cause.py, not on last-logged concentration.
+      consistent with step2_root_cause.py, not on last-logged concentration.
     - The first 90 batches (by position) define the 3-sigma baseline.
       IndPenSim's faulted batches are 91-100, so this baseline window is
       guaranteed to be the normal set.
@@ -24,7 +24,7 @@ FINDING
     Flagged batches are indistinguishable from normal ones in the early
     hours. The divergence becomes visible around mid-run (~hour 100),
     which pins the intervention window and motivates the deeper root-cause
-    search in Root_Cause.py.
+    search in step2_root_cause.py.
 """
 
 import matplotlib.pyplot as plt

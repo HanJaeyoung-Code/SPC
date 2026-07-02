@@ -4,7 +4,7 @@ STEP 3 - SPC CONTROL CHART - I-MR Chart on Batch-Average pH
 PURPOSE
     Confirm whether pH is in statistical control across all 100 batches, to
     check whether pH excursions could explain the yield variation found in
-    Root_Cause.py.
+    step2_root_cause.py.
 
 APPROACH
     1. Collapse each batch's pH time series to a single batch-mean value.
@@ -24,7 +24,7 @@ KEY DECISIONS
       sudden jumps in VARIABILITY between batches.
     - Variable: pH is actively controlled during fermentation. If the I-MR
       chart shows pH in statistical control, it rules out pH excursions as
-      a cause of yield variation, directly supporting the Root_Cause.py
+      a cause of yield variation, directly supporting the step2_root_cause.py
       finding that substrate management, not environment, is the driver.
     - Phase 1 vs Phase 2: standard SPC practice uses a stable baseline
       window (Phase 1) only to ESTIMATE control limits, then plots all
@@ -46,7 +46,7 @@ FINDING
     This chart does not look for problems in pH -- it confirms that pH is
     stable, which lets us rule it out as a root cause. If pH is in
     control, the yield variation must come from something else, and
-    Root_Cause.py shows that something else is substrate concentration.
+    step2_root_cause.py shows that something else is substrate concentration.
 """
 
 import numpy as np
@@ -208,4 +208,4 @@ elif n_ooc <= 3:
     print("→ pH is largely stable; substrate management remains the primary driver.")
 else:
     print(f"pH shows {n_ooc} OOC points — pH stability may be a contributing factor.")
-    print("→ Consider adding pH to the root-cause comparison in Root_Cause.py.")
+    print("→ Consider adding pH to the root-cause comparison in step2_root_cause.py.")

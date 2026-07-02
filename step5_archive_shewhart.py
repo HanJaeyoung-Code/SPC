@@ -1,10 +1,10 @@
 """
-STAGE 5 - SPC CONTROL CHART (RETIRED)
+STEP 5 - SPC CONTROL CHART (RETIRED)
 ================================================================================
 PURPOSE
     Record, as an honest archive, an SPC approach that was tried and did
     not fit the data -- kept here instead of deleted so the reasoning that
-    led to Stage 4 (Root_Cause.py) is not lost.
+    led to step2_root_cause.py is not lost.
 
 APPROACH
     A standard Shewhart Individuals control chart on final yield, using
@@ -23,7 +23,7 @@ FINDING
     they are a signal about the process. A single pair of control limits
     cannot describe a process this variable. More importantly, the spread
     between good and bad batches is *not* noise to filter out -- it is the
-    signal to explain. That reframe drives Stage 4 (Root_Cause.py).
+    signal to explain. That reframe drives step2_root_cause.py.
 """
 
 import numpy as np
