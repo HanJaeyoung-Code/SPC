@@ -464,7 +464,7 @@ the same data you used to build it — that's overfitting.
 
 ---
 
-## 10. Operating recommendations (what a process engineer would do)
+## 10. Operating recommendations 
 
 1. **Feed to demand.** Match sugar feed to consumption so residual glucose stays near
    zero — keep the culture glucose-limited, the penicillin-producing state.
